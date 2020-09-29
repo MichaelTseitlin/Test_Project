@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="TestProject" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="Pln-qc-eJE" id="ftW-De-Cu6"/>
+                <outlet property="loadButton" destination="tUO-5f-pYD" id="huQ-QQ-Xa9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="t3b-fI-9LX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUO-5f-pYD">
+                    <rect key="frame" x="171.5" y="433" width="71" height="30"/>
+                    <state key="normal" title="Load cats!"/>
+                    <connections>
+                        <action selector="goToSecondScreen" destination="-1" eventType="touchUpInside" id="twJ-tp-JeS"/>
+                    </connections>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Pln-qc-eJE">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tUO-5f-pYD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BBR-N6-x5d"/>
+                <constraint firstItem="tUO-5f-pYD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KNz-EK-Xqg"/>
+                <constraint firstItem="Pln-qc-eJE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="g6C-ml-Wi3"/>
+                <constraint firstItem="Pln-qc-eJE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lE0-1I-zuC"/>
+            </constraints>
+            <point key="canvasLocation" x="-6" y="58"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
